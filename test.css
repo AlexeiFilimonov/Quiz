@@ -1,0 +1,132 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #01203A;
+    font-weight: 600;
+}
+
+body {
+    background-color: #80c8bc ; 
+}
+
+p {
+    text-align: left;
+    margin-left: 5px;
+}
+
+.enterName {
+    text-align: center;
+}
+.form {
+    width: 600px;
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.title {
+    text-align: center;
+    background-color: #A5E794;
+}
+
+.main {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+
+input {
+    border-width: 1px;
+    border-color: #80c8bc;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input:hover {
+    background-color: #e7fffb;
+}
+
+input:focus {
+    background-color: #e7fffb;
+    outline: none;
+}
+
+
+input[type=radio] {
+    margin-left: 30px;
+}
+
+input[type=radio]:hover, label:hover {
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    max-width: calc(100% - 46px);
+    
+}
+
+.questionName+p{
+    margin-top: 0px;
+}
+
+.questionName~p>input{
+    vertical-align: top;
+    margin-top: 6px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #A5E794;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#9ed88d;
+}
+
+.selectAnswerMessage {
+    color: red;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.questionName {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.questionCounter {
+    margin-left: 20px;
+}
+
+.resultQuestion{
+    padding-left: 15px;
+}
+
+.resultAnswer{
+    padding-left: 25px;
+}
+
+.rightAnswer {
+    color: rgb(6, 207, 6);
+}
+
+.wrongAnswer {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .form {width: 98%;margin: 3px 0 0 1%;left: 0;top: 0;right: 0;}
+  }
